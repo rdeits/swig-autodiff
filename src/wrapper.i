@@ -49,4 +49,4 @@ def newAutoDiffLike(template, value):
 AutoDiffWrapper<Eigen::VectorXd, Eigen::Dynamic, 1> squareVector(AutoDiffWrapper<Eigen::VectorXd, Eigen::Dynamic, 1>);
 AutoDiffWrapper<Eigen::Matrix<double, Eigen::Dynamic, 1, 0, 73>, Eigen::Dynamic, 1> squareVector(AutoDiffWrapper<Eigen::Matrix<double, Eigen::Dynamic, 1, 0, 73>, Eigen::Dynamic, 1>);
 AutoDiffWrapper<Eigen::VectorXd, Eigen::Dynamic, Eigen::Dynamic> squareMatrix(AutoDiffWrapper<Eigen::VectorXd, Eigen::Dynamic, Eigen::Dynamic>);
-
+Eigen::VectorXd squareVector(const Eigen::VectorXd&);

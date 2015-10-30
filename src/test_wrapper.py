@@ -1,6 +1,10 @@
 from wrapper import newAutoDiff, newAutoDiffLike, squareVector, squareMatrix
 import numpy as np
 
+x = np.array([1,2,3.])
+y = squareVector(x)
+assert np.allclose(y.T, np.power(x, 2))
+
 x = newAutoDiff(np.array([1.0, 3.0]), np.array([2.0, 5.0]))
 print x.value()
 print x

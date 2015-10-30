@@ -15,13 +15,14 @@ addons:
       - cmake
       - swig
       - gcc-4.8
+      - g++-4.8
 
 python:
   - '2.7'
 
 before_install:
   - mkdir build
-  - export CXX="g++-4.8"
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
 
 install:
   - cd externals

@@ -14,12 +14,14 @@ addons:
     packages:
       - cmake
       - swig
+      - gcc-4.8
 
 python:
   - '2.7'
 
 before_install:
   - mkdir build
+  - export CXX="g++-4.8"
 
 install:
   - cd externals

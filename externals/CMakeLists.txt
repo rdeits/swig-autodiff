@@ -29,11 +29,9 @@ endif()
 ExternalProject_Add(pods-cmake
     DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/pods-cmake
     SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/pods-cmake
-    GIT_REPOSITORY https://github.com/RobotLocomotion/cmake.git
-    GIT_TAG 94a181859aca6512861084077066e1080678b819
-    CONFIGURE_COMMAND ""
-    BUILD_COMMAND ""
-    INSTALL_COMMAND cp -r ${CMAKE_CURRENT_SOURCE_DIR}/pods-cmake/ ${CMAKE_INSTALL_PREFIX}/share/cmake/
+    GIT_REPOSITORY https://github.com/rdeits/cmake.git
+    GIT_TAG 09717d6e309fc56785f0259b2e7a283bfb02e16b
+    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX} -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
     )
 
 ExternalProject_Add(swigmake

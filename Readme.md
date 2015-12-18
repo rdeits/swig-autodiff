@@ -12,3 +12,10 @@ A demonstration of wrapping Eigen's AutoDiffScalar type from Python using Swig.
 	cd ..
 	make
 
+## Requirements
+
+	python (python2.7 and python3 are both supported)
+	cmake
+	swig
+	build-essential
+

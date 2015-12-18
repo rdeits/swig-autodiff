@@ -17,8 +17,6 @@ addons:
     packages:
       - cmake
       - swig
-      # - gcc-4.8
-      # - g++-4.8
 
 python:
   - '2.7'
@@ -26,7 +24,6 @@ python:
 
 before_install:
   - mkdir build
-  # - export CXX="g++-4.8" CC="gcc-4.8"
 
 install:
   - cd externals

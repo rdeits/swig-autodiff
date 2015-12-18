@@ -9,6 +9,9 @@
 #include <iostream>
 %}
 
+%pybinoperator(__div__,      *::operator/,      binaryfunc, nb_divide);
+%feature("python:slot", "nb_truediv", functype="binaryfunc") *::operator/;
+
 %include <autodiff.i>
 
 %template(AutoDiffVectorDynamic) AutoDiffWrapper<Eigen::VectorXd, Eigen::Dynamic, 1>;
